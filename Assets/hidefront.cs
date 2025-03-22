@@ -17,6 +17,7 @@ public class hidefront : MonoBehaviour
     public void hidefrontbutton()
     {
         gameObject.active = false;
+        
     }
     
     

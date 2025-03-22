@@ -13,15 +13,23 @@ public class gpubutton : MonoBehaviour
     {
         
     }
+
+
+
+    public static bool showobjects;
     
     public Transform placeholder;
     public Transform placeholder2;
 
     public static bool isAnyComponentOut = false;
 
+    private void hideobjects()
+    {
+        gameObject.active = showobjects;
+    }
+    
+    
     public bool isOut = false;
-    
-    
     
     void OnMouseDown()
     {
