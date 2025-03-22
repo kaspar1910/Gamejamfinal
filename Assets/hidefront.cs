@@ -14,11 +14,17 @@ public class hidefront : MonoBehaviour
         
     }
 
+    public GameObject[] gpuObjectsToEnable;
+
     public void hidefrontbutton()
     {
-        gameObject.active = false;
-        
+        // Hide the current object
+        gameObject.SetActive(false);
+
+        // Show all assigned GPU objects
+        foreach (GameObject gpu in gpuObjectsToEnable)
+        {
+            gpu.SetActive(true);
+        }
     }
-    
-    
 }

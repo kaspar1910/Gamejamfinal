@@ -5,7 +5,7 @@ public class gpubutton : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+            gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -13,21 +13,13 @@ public class gpubutton : MonoBehaviour
     {
         
     }
-
-
-
-    public static bool showobjects;
+    
     
     public Transform placeholder;
+    
     public Transform placeholder2;
 
     public static bool isAnyComponentOut = false;
-
-    private void hideobjects()
-    {
-        gameObject.active = showobjects;
-    }
-    
     
     public bool isOut = false;
     
