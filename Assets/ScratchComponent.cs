@@ -22,52 +22,58 @@ public class ScratchComponent : MonoBehaviour
         
         startTaskButton.onClick.AddListener(StartTask);
         endTaskButton.onClick.AddListener(EndTask);
+        
+        endTaskButton.gameObject.SetActive(false);
+        UpdateMoneyUI();
     }
 
     public void StartTask()
     {
+        taskActive = true;
+        scratchCount = 0;
+        moneyEarned = 0;
+        UpdateMoneyUI();
         
+        startTaskButton.gameObject.SetActive(false);
+        endTaskButton.gameObject.SetActive(true);
     }
 
     public void EndTask()
     {
+        taskActive = false;
+        CalculateReward();
         
+        startTaskButton.gameObject.SetActive(true);
+        endTaskButton.gameObject.SetActive(false);
     }
 
     public void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (taskActive && Input.GetMouseButtonDown(0)) 
         {
             scratchCount++;
-            
-            float intensity = (float) scratchCount / maxScratches;
+            float intensity = (float)scratchCount / maxScratches;
             GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.gray, intensity);
-            CheckScratchStatus();
         }
         
     }
 
-    private void CheckScratchStatus()
+    public void CalculateReward()
     {
         if (scratchCount == idealScratches)
-        {
-            moneyEarned = 100; 
-            Debug.Log("Perfekt sabotage! Du tjener " + moneyEarned + " kr.");
-        }
+            moneyEarned = 100;
         else if (scratchCount < idealScratches)
-        {
-            moneyEarned = 50; 
-            Debug.Log("Du ridser ikke nok, men får stadig " + moneyEarned + " kr.");
-        }
+            moneyEarned = 50;
         else if (scratchCount > idealScratches && scratchCount <= maxScratches)
-        {
-            moneyEarned = 20; 
-            Debug.Log("Du har ridset lidt for meget. Du tjener kun " + moneyEarned + " kr.");
-        }
+            moneyEarned = 20;
         else
-        {
-            moneyEarned = 0; 
-            Debug.Log("For mange ridser! Kunden opdager det, og du får ingenting.");
-        }
+            moneyEarned = 0;
+
+        Debug.Log("Du tjener: " + moneyEarned + " kr.");
+        UpdateMoneyUI();
+    }
+    public void UpdateMoneyUI()
+    {
+        moneyText.text = "Money earned: " + moneyEarned +"$";
     }
 }
