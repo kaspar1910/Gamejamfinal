@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4b5924acc0975e64895972db84f071a1
+guid: 8930783d6c02c2b45b79f42a73a03cb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6382499083435815601
-    second: basic-empty-case_0
+      213: 3781923640651336240
+    second: ram-stick_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: basic-empty-case_0
+      name: ram-stick_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 1
         y: 2
-        width: 44
-        height: 60
+        width: 14
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b2b277b911339850800000000000000
-      internalID: 6382499083435815601
+      spriteID: 03acca083871c7430800000000000000
+      internalID: 3781923640651336240
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      basic-empty-case_0: 6382499083435815601
+      ram-stick_0: 3781923640651336240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
