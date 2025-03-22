@@ -1975,6 +1975,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2ee1fe2d183cc4d85cc3096c747be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gpuObjectsToEnable:
+  - {fileID: 6988582}
+  - {fileID: 1338486154}
+  - {fileID: 821721966}
+  - {fileID: 269217073}
+  - {fileID: 1392604627}
 --- !u!212 &1486745879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2039,7 +2045,7 @@ Transform:
   m_GameObject: {fileID: 1486745877}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 903, y: 246, z: 0}
+  m_LocalPosition: {x: 539, y: 257, z: 0}
   m_LocalScale: {x: 500, y: 500, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
