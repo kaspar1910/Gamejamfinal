@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tech-repair-shop (1)_0: -1405321028353435827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
