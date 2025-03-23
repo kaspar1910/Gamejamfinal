@@ -5,15 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: c0336b41dd0074b11b9722f774458f75
   - enabled: 1
     path: Assets/Scenes/spil.unity
     guid: aa542dff697da0c4b919fc24b1216d25
+  - enabled: 1
+    path: Assets/Scenes/gpuscene.unity
+    guid: 449c08b277e34d3419aee6f0af99caff
+  - enabled: 1
+    path: Assets/Scenes/cpu scene.unity
+    guid: 4ba812070049cc24ebb3442492af8046
+  - enabled: 1
+    path: Assets/Scenes/power supply scene.unity
+    guid: ad4b514f165499843be65f6f043987e7
+  - enabled: 1
+    path: Assets/Scenes/wires scene.unity
+    guid: ad014e9e673d61e438d126978797e5a0
+  - enabled: 1
+    path: Assets/Scenes/ram scene.unity
+    guid: f3174cb5abd6b0c4a8491ff72b4275b3
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 0
+    path: Assets/Scenes/scratch.unity
+    guid: 03871c8e03c748e40ad923eba0c9baa1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
